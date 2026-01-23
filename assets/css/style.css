@@ -6504,12 +6504,6 @@ label {
 .feature-area2 {
   padding: 50px 0;
 }
-.feature-item {
-  display: block;
-}
-.feature-content h4 {
-  padding: 10px 0;
-}
 /* .process-area {
   padding: 50px 0;
 }
@@ -6550,5 +6544,12 @@ label {
   }
   .portfolio-area {
     padding: 65px 0;
+  }
+  .feature-item {
+    display: block;
+  }
+
+  .feature-content h4 {
+    padding: 8px 0;
   }
 }
