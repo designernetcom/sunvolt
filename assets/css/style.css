@@ -2430,6 +2430,7 @@ label {
 .feature-content p {
   color: var(--color-white);
   margin-top: 10px;
+  text-align: justify;
 }
 
 /* feature-area 2 */
@@ -6499,6 +6500,15 @@ label {
 }
 .footer-widget-wrap {
   padding: 50px 0 20px;
+}
+.feature-area2 {
+  padding: 50px 0;
+}
+.feature-item {
+  display: block;
+}
+.feature-content h4 {
+  padding: 10px 0;
 }
 /* .process-area {
   padding: 50px 0;

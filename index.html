@@ -162,24 +162,60 @@
                       >Products <i class="fa-solid fa-angle-down"></i
                     ></a>
                     <ul class="dropdown-menu fade-down">
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="fa-solid fa-angle-right"></i> Product One</a
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#"
+                          >Inverter</a
                         >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="">Havells </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="">Growatt</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="">Waaree</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="">Ksolar</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="">Sungrow</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="">Selec</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="">Sunsathi</a>
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="">X-Watt</a>
+                          </li>
+                        </ul>
                       </li>
-                      <li>
-                        <a class="dropdown-item" href="#">
-                          <i class="fa-solid fa-angle-right"></i> Product Two</a
+                      <li class="dropdown-submenu">
+                        <a class="dropdown-item dropdown-toggle" href="#"
+                          >Solar Panels</a
                         >
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="#"
-                          ><i class="fa-solid fa-angle-right"></i> Product
-                          three</a
-                        >
+                        <ul class="dropdown-menu">
+                          <li>
+                            <a class="dropdown-item" href="">Waaree </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="">Adani</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="">Tata</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="">Vikram</a>
+                          </li>
+                        </ul>
                       </li>
                     </ul>
                   </li>
+
                   <li class="nav-item">
                     <a class="nav-link" href="#">Gallery</a>
                   </li>
@@ -379,6 +415,64 @@
       </div>
 
       <!-- hero area end -->
+
+      <div class="feature-area2">
+        <div class="container">
+          <div class="feature-wrap">
+            <div class="row g-4">
+              <div class="col-md-6 col-lg-4">
+                <div class="feature-item">
+                  <span class="count">01</span>
+                  <div class="feature-icon">
+                    <img src="assets/img/icon/staff.svg" alt="" />
+                  </div>
+                  <div class="feature-content">
+                    <h4>Experts Staff</h4>
+                    <p>
+                      Our team consists of highly trained professionals with
+                      years of hands-on experience. We deliver reliable
+                      solutions  to excellence in every project.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="feature-item">
+                  <span class="count">02</span>
+                  <div class="feature-icon">
+                    <img src="assets/img/icon/money.svg" alt="" />
+                  </div>
+                  <div class="feature-content">
+                    <h4>Affordable Pricing</h4>
+                    <p>
+                      We offer transparent and competitive pricing without
+                      compromising on quality. Our cost-effective solutions are
+                      designed to deliver maximum value within
+                      your budget.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 col-lg-4">
+                <div class="feature-item">
+                  <span class="count">03</span>
+                  <div class="feature-icon">
+                    <img src="assets/img/icon/support.svg" alt="" />
+                  </div>
+                  <div class="feature-content">
+                    <h4>Support</h4>
+                    <p>
+                      Our dedicated support team is available around the clock
+                      to assist you whenever you need help. From quick queries
+                      to critical issues, we’re always just a call away.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- about area -->
       <div class="about-area py-120">
@@ -2188,9 +2282,15 @@
         margin: 15, // instead of 20
         loop: true,
         responsive: {
-          0: { items: 1 },
-          768: { items: 2 },
-          1200: { items: 4 },
+          0: {
+            items: 1,
+          },
+          768: {
+            items: 2,
+          },
+          1200: {
+            items: 4,
+          },
         },
       });
     </script>
