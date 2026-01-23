@@ -6490,12 +6490,15 @@ label {
 .skill-area {
   padding: 70px 0;
 }
-.footer-widget-wrap,
+
 .process-area,
 .location-area,
 .team-area,
 .about-area {
   padding: 50px 0;
+}
+.footer-widget-wrap {
+  padding: 50px 0 20px;
 }
 /* .process-area {
   padding: 50px 0;
