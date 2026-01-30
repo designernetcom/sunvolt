@@ -6552,6 +6552,33 @@ label {
   .feature-content h4 {
     padding: 8px 0;
   }
+  .faq-area {
+    padding-top: 10px;
+  }
+  .faq-area .product {
+    margin-top: 20px;
+  }
+  .spec-table-section img {
+    margin-bottom: 40px;
+  }
+  .faq-area .product {
+    margin-top: 20px;
+  }
+  .site-breadcrumb {
+    padding-top: 105px;
+    padding-bottom: 75px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .header-top-right {
+    display: inline-block;
+  }
+  .header-top .shape-1 {
+    width: 40%;
+  }
+  .navbar .nav-item .nav-link {
+    margin-right: 30px;
+  }
 }
 /* .video-box {
   width: 280px;          
@@ -6612,11 +6639,9 @@ label {
   font-weight: 700;
 }
 .faq-area .product {
-  margin-top: 50px;
+  margin-top: 40px;
 }
-.faq-area {
-  padding-top: 60px;
-}
+
 .faq-area p {
   text-align: justify;
 }
