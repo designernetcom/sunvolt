@@ -6621,7 +6621,8 @@ label {
   text-align: justify;
 }
 .faq-area .bottom {
-  padding: 60px 0;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 .gallery-area {
   padding: 50px 0;
