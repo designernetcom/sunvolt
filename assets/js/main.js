@@ -72,8 +72,8 @@ Version         : 1.0
     autoplayTimeout: 5000,
     items: 1,
     navText: [
-      "<i class='far fa-long-arrow-left'></i>",
-      "<i class='far fa-long-arrow-right'></i>",
+      "<i class='fa fa-long-arrow-left'></i>",
+      "<i class='fa fa-long-arrow-right'></i>",
     ],
 
     onInitialized: function (event) {
