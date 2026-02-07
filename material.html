@@ -64,8 +64,8 @@
                   </li>
                   <li>
                     <a href="#"
-                      ><i class="fa-regular fa-clock"></i> Sun - Fri (08AM -
-                      10PM)</a
+                      ><i class="fa-regular fa-clock"></i> Sun - Sat (09AM -
+                      7PM)</a
                     >
                   </li>
                 </ul>
@@ -164,22 +164,17 @@
                         <ul class="dropdown-menu">
                           <li>
                             <a class="dropdown-item" href="inverters.html"
-                              >Havells
+                              >Ksolar
                             </a>
                           </li>
                           <li>
                             <a class="dropdown-item" href="inverters.html"
-                              >Growatt</a
+                              >Waree</a
                             >
                           </li>
                           <li>
                             <a class="dropdown-item" href="inverters.html"
-                              >Waaree</a
-                            >
-                          </li>
-                          <li>
-                            <a class="dropdown-item" href="inverters.html"
-                              >Ksolar</a
+                              >Polycab</a
                             >
                           </li>
                           <li>
@@ -189,7 +184,7 @@
                           </li>
                           <li>
                             <a class="dropdown-item" href="inverters.html"
-                              >Selec</a
+                              >Growatt</a
                             >
                           </li>
                           <li>
@@ -197,10 +192,20 @@
                               >Sunsathi</a
                             >
                           </li>
-
                           <li>
                             <a class="dropdown-item" href="inverters.html"
                               >X-Watt</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="inverters.html"
+                              >Havells</a
+                            >
+                          </li>
+
+                          <li>
+                            <a class="dropdown-item" href="inverters.html"
+                              >Selec</a
                             >
                           </li>
                         </ul>
@@ -212,14 +217,20 @@
                         <ul class="dropdown-menu">
                           <li>
                             <a class="dropdown-item" href="solar-panels.html"
+                              >Adani</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="solar-panels.html"
                               >Waaree
                             </a>
                           </li>
                           <li>
                             <a class="dropdown-item" href="solar-panels.html"
-                              >Adani</a
-                            >
+                              >Premiere
+                            </a>
                           </li>
+
                           <li>
                             <a class="dropdown-item" href="solar-panels.html"
                               >Tata</a
@@ -228,6 +239,11 @@
                           <li>
                             <a class="dropdown-item" href="solar-panels.html"
                               >Vikram</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="solar-panels.html"
+                              >ECE India</a
                             >
                           </li>
                         </ul>
@@ -1299,6 +1315,72 @@
     <!-- scroll-top -->
     <a href="#" id="scroll-top"><i class="fa fa-arrow-up"></i></a>
     <!-- scroll-top end -->
+
+    <script>
+      $(document).ready(function () {
+        $("#modal-form").on("submit", function (e) {
+          e.preventDefault();
+
+          grecaptcha.ready(function () {
+            grecaptcha
+              .execute("6Lc201csAAAAALw5y4Wxu3ddtmEDqdM5TflD6F9y", {
+                action: "contact_form1",
+              })
+              .then(function (token) {
+                // set recaptcha token
+                $("#recaptcha_token").val(token);
+
+                let formData = new FormData($("#modal-form")[0]);
+
+                $("#btn_submit").prop("disabled", true).text("Sending...");
+
+                $.ajax({
+                  url: "contact_valid.php1",
+                  type: "POST",
+                  data: formData,
+                  contentType: false,
+                  processData: false,
+                  success: function (response) {
+                    $("#btn_submit")
+                      .prop("disabled", false)
+                      .text("Send Message");
+
+                    if (response.trim() === "sent") {
+                      Swal.fire({
+                        icon: "success",
+                        title: "Message Sent",
+                        text: "Thank you! We will contact you shortly.",
+                      });
+                      $("#modal-form")[0].reset();
+                    } else {
+                      Swal.fire({
+                        icon: "error",
+                        title: "Error",
+                        text: response,
+                      });
+                    }
+                  },
+                  error: function () {
+                    $("#btn_submit")
+                      .prop("disabled", false)
+                      .text("Send Message");
+
+                    Swal.fire({
+                      icon: "error",
+                      title: "Oops!",
+                      text: "Something went wrong. Please try again.",
+                    });
+                  },
+                });
+              });
+          });
+        });
+      });
+    </script>
+
+    <script src="https://www.google.com/recaptcha/api.js?render=6Lc201csAAAAALw5y4Wxu3ddtmEDqdM5TflD6F9y"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script
       data-cfasync="false"
       src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"

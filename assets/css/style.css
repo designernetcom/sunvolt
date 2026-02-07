@@ -3490,7 +3490,7 @@ label {
 }
 
 .team-area2 .team-content {
-  text-align: left;
+  text-align: center;
 }
 
 @media all and (max-width: 767px) {
@@ -6773,4 +6773,7 @@ label {
 .hero-slider .owl-stage,
 .hero-slider .owl-item {
   height: 100%;
+}
+.team-area2 {
+  padding: 50px 0;
 }
