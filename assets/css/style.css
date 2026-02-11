@@ -2872,6 +2872,7 @@ label {
 
 .portfolio-area {
   position: relative;
+  padding: 50px 0;
 }
 
 .pa-bg {
@@ -3785,6 +3786,7 @@ label {
   background-attachment: fixed;
   overflow: hidden;
   z-index: 1;
+  padding: 60px 0;
 }
 
 .cta-area::before {
@@ -3895,7 +3897,7 @@ label {
 }
 
 .choose-item-info h4 {
-  color: var(--color-dark);
+  color: #ffffff;
   margin-bottom: 8px;
   font-size: 20px;
   font-weight: 700;
@@ -6541,7 +6543,7 @@ label {
     padding-top: 20px;
   }
   .sa-bg {
-    padding: 30px 0;
+    padding: 30px 0 80px;
     margin-top: 65px;
   }
   .portfolio-area {
@@ -6775,5 +6777,18 @@ label {
   height: 100%;
 }
 .team-area2 {
+  padding: 50px 0;
+}
+@media (max-width: 374px) {
+  .choose-img .shape {
+    width: 75px;
+  }
+}
+@media all and (min-width: 375px) and (max-width: 767px) {
+  .choose-img .shape {
+    width: 100px;
+  }
+}
+.faq-area {
   padding: 50px 0;
 }
